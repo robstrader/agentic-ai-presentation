@@ -29,9 +29,8 @@ transition: fade-out
 
 A timeline of key breakthroughs that led to Agentic AI
 
-```mermaid {scale: 0.85}
+```mermaid {scale: 0.75}
 timeline
-    title Evolution of Modern AI
     2017 : Attention is All You Need
          : Transformer Architecture
     2022 : ChatGPT Released
@@ -41,12 +40,6 @@ timeline
     2024 : Agentic AI
          : AI that takes actions
 ```
-
-<v-click>
-
-Each step built on the previous one, solving new problems and unlocking new capabilities.
-
-</v-click>
 
 ---
 transition: slide-up
@@ -157,12 +150,12 @@ Giving AI access to external knowledge
 
 </div>
 
-```mermaid {scale: 0.9}
+```mermaid {scale: 0.85}
 flowchart LR
-    A["🙋 User Question"] --> B["🔍 Search Knowledge Base"]
-    B --> C["📄 Retrieve Relevant Info"]
-    C --> D["🤖 LLM Generates Answer"]
-    D --> E["✅ Response with Sources"]
+    A["🙋 Question"] --> B["🔍 Search"]
+    B --> C["📄 Retrieve Info"]
+    C --> D["🤖 LLM Answer"]
+    D --> E["✅ Response"]
 ```
 
 <v-click>
@@ -220,14 +213,27 @@ From responding → to *acting*
 </div>
 <div>
 
-```mermaid {scale: 0.75}
-flowchart TD
-    A["📋 Receive Task"] --> B["🗺️ Plan Steps"]
-    B --> C["⚡ Execute Action"]
-    C --> D["👀 Observe Result"]
+```mermaid {scale: 0.6}
+ flowchart TD
+    subgraph Row1 [ ]
+        direction LR
+        A["📋 Receive Task"] --> B["🗺️ Plan Steps"]
+    end
+
+    subgraph Row2 [ ]
+        direction RL
+        D["👀 Observe Result"] --> C["⚡ Execute Action"]
+    end
+
+    %% Vertical connectors to snake the flow
+    B --> C
     D --> E{"🎯 Goal Achieved?"}
-    E -->|No| B
-    E -->|Yes| F["✅ Return Result"]
+    E -- "Yes" --> F["✅ Return Result"]
+    E -- "No" --> B
+
+    %% Hide subgraph borders for a clean look
+    style Row1 fill:none,stroke:none
+    style Row2 fill:none,stroke:none
 ```
 
 <div class="text-center text-sm opacity-60 mt-2">
