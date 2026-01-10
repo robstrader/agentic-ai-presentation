@@ -211,32 +211,19 @@ From responding → to *acting*
 </v-click>
 
 </div>
-<div>
+<div class="-mt-20 flex items-center justify-center">
 
 ```mermaid {scale: 0.6}
- flowchart TD
-    subgraph Row1 [ ]
-        direction LR
-        A["📋 Receive Task"] --> B["🗺️ Plan Steps"]
-    end
-
-    subgraph Row2 [ ]
-        direction RL
-        D["👀 Observe Result"] --> C["⚡ Execute Action"]
-    end
-
-    %% Vertical connectors to snake the flow
-    B --> C
+flowchart TD
+    A["📋 Receive Task"] --> B["🗺️ Plan Steps"]
+    B --> C["⚡ Execute Action"]
+    C --> D["👀 Observe Result"]
     D --> E{"🎯 Goal Achieved?"}
     E -- "Yes" --> F["✅ Return Result"]
     E -- "No" --> B
-
-    %% Hide subgraph borders for a clean look
-    style Row1 fill:none,stroke:none
-    style Row2 fill:none,stroke:none
 ```
 
-<div class="text-center text-sm opacity-60 mt-2">
+<div class="text-sm opacity-60 ml-4 w-32">
   The Agent Loop: Plan → Act → Observe → Repeat
 </div>
 
