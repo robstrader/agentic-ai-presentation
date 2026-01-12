@@ -4,8 +4,7 @@ background: https://cover.sli.dev
 title: What is Agentic AI?
 info: |
   ## What is Agentic AI?
-  A presentation for UX/Visual Design students exploring the evolution
-  from Transformers to Agentic AI.
+  A presentation exploring the evolution from Transformers to Agentic AI.
 class: text-center
 drawings:
   persist: false
@@ -50,7 +49,7 @@ The foundation that made modern AI possible
 
 - **June 2017**: Google researchers published "Attention is All You Need"
 - Introduced a new way for AI to understand language
-- **Key insight**: AI can look at *all words* in a sentence at once
+- **Key insight**: AI can understand relationships between *all words* simultaneously
 - This "attention mechanism" helps AI understand context better
 
 <v-click>
@@ -80,14 +79,14 @@ When AI became accessible to everyone
 <div>
 
 - **November 2022**: ChatGPT launched to the public
-- First time anyone could chat with an advanced AI
+- First time millions could easily chat with a state-of-the-art AI
 - Reached 100 million users in just 2 months!
 
 <v-click>
 
 - **LLM** = *Large Language Model*
 - Trained on massive amounts of text from the internet
-- Can generate human-like responses to any question
+- Can generate human-like responses to a wide range of questions
 
 </v-click>
 
@@ -169,7 +168,7 @@ From responding → to *acting*
 - **Plans**: Breaks down complex tasks into steps
 - **Acts**: Uses tools (browse web, write code, send emails)
 - **Decides**: Makes choices autonomously
-- **Learns**: Improves based on results
+- **Iterates**: Refines approach based on feedback
 
 </v-click>
 
@@ -177,7 +176,7 @@ From responding → to *acting*
 
 ### Real Examples
 
-- GitHub Copilot building features
+- AI coding assistants writing code
 - AI assistants booking travel
 - AI agents researching topics
 - Tools like this presentation assistant!
@@ -235,7 +234,7 @@ class: text-center
 </div>
 
 <div class="mt-12 opacity-80">
-  Transformers read, LLMs write, RAG researches, but Agents do.
+  Attention reads, LLMs write, RAG researches, but Agents do.
 </div>
 
 <PoweredBySlidev mt-10 />
