@@ -260,8 +260,8 @@ class: text-center
   </div>
 </div>
 
-<div class="mt-12 opacity-50">
-  Each innovation built on the last, expanding what AI can do.
+<div class="mt-12 opacity-80">
+  Transformers read, LLMs write, RAG researches, but Agents do.
 </div>
 
 <PoweredBySlidev mt-10 />
