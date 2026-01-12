@@ -41,7 +41,7 @@ timeline
 transition: slide-up
 ---
 
-# Transformer Architecture
+# Transformer Architecture and Attention Mechanism
 
 The foundation that made modern AI possible
 
@@ -104,12 +104,7 @@ When AI became accessible to everyone
 </div>
 <div class="flex items-center justify-center">
 
-<!-- Placeholder for chat interface -->
-<div class="border-2 border-dashed border-gray-400 rounded-lg p-6 text-center opacity-60 w-full">
-  <div class="i-carbon-chat text-4xl mb-2"></div>
-  <p class="text-sm">Chat interface mockup</p>
-  <p class="text-xs">User asking questions, AI responding</p>
-</div>
+<img src="/images/chatgpt-original-ui.png" class="rounded-lg shadow-lg w-full" alt="ChatGPT Original UI" />
 
 </div>
 </div>
