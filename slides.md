@@ -17,10 +17,6 @@ mdc: true
 
 Understanding the Evolution of Modern AI
 
-<div class="abs-br m-6 text-sm opacity-50">
-  For UX/Visual Design Students
-</div>
-
 ---
 transition: fade-out
 ---
