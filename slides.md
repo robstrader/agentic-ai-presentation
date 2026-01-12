@@ -30,8 +30,8 @@ timeline
          : Transformer Architecture
     2022 : ChatGPT Released
          : GPT-3.5 & LLMs
-    2023 : RAG Architecture
-         : Retrieval-Augmented Generation
+    2023 : Retrieval-Augmented Generation(RAG) Becomes Standard
+         : Connecting LLMs to live data
     2024 : Agentic AI
          : AI that takes actions
 ```
