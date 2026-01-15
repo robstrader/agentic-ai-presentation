@@ -53,14 +53,19 @@ The foundation that made modern AI possible
 <div>
 
 - **June 2017**: Google researchers published "Attention is All You Need"
-- Introduced a new way for AI to understand language
 - **Key insight**: AI can understand relationships between *all words* simultaneously
 - This "attention mechanism" helps AI understand context better
 
 <v-click>
 
 - **GPT** = *Generative Pre-trained Transformer*
-- Uses this architecture to generate human-like text
+
+</v-click>
+
+<v-click>
+
+- The output? **Embeddings**—numerical representations that capture meaning
+- But what exactly goes *into* this attention mechanism? → **Tokens**
 
 </v-click>
 
@@ -78,13 +83,18 @@ transition: slide-up
 
 # How LLMs Understand Language
 
-Tokens and semantic meaning
+From tokens to embeddings—what the Transformer actually processes
+
+<div class="bg-blue-500 bg-opacity-20 rounded-lg p-3 mb-4 text-sm">
+  <strong>The Flow:</strong> Text → <strong>Tokens</strong> → Transformer (Attention) → <strong>Embeddings</strong> → Meaning
+</div>
 
 <div class="grid grid-cols-2 gap-8">
 <div>
 
-### Tokens: The Building Blocks
+### Tokens: The Input
 
+- Remember: the Transformer needs input to process
 - LLMs don't read words—they read **tokens**
 - Tokens are pieces of text (words, parts of words, punctuation)
 - Example: "understanding" → `["under", "stand", "ing"]`
@@ -93,7 +103,6 @@ Tokens and semantic meaning
 
 - A typical prompt might be **hundreds of tokens**
 - Models have token limits (context window)
-- This is why long conversations get "cut off"
 
 </v-click>
 
@@ -104,7 +113,6 @@ Tokens and semantic meaning
 
 ### Semantic Understanding
 
-- Traditional search: exact **keyword matching**
 - LLMs: understand **meaning** and relationships
 
 </v-click>
@@ -151,7 +159,6 @@ When AI became accessible to everyone
 
 <v-click>
 
-- **LLM** = *Large Language Model*
 - Trained on massive amounts of text from the internet
 - Can generate human-like responses to a wide range of questions
 
@@ -159,10 +166,9 @@ When AI became accessible to everyone
 
 <v-click>
 
-### The Limitation
+## The Limitation
 
 - LLMs only know what they were trained on
-- Knowledge is "frozen" at a point in time
 - Can't access new information or verify facts
 
 </v-click>
