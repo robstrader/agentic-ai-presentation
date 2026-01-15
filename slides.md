@@ -71,6 +71,68 @@ The foundation that made modern AI possible
 transition: slide-up
 ---
 
+# How LLMs Understand Language
+
+Tokens and semantic meaning
+
+<div class="grid grid-cols-2 gap-8">
+<div>
+
+### Tokens: The Building Blocks
+
+- LLMs don't read words—they read **tokens**
+- Tokens are pieces of text (words, parts of words, punctuation)
+- Example: "understanding" → `["under", "stand", "ing"]`
+
+<v-click>
+
+- A typical prompt might be **hundreds of tokens**
+- Models have token limits (context window)
+- This is why long conversations get "cut off"
+
+</v-click>
+
+</div>
+<div>
+
+<v-click>
+
+### Semantic Understanding
+
+- Traditional search: exact **keyword matching**
+- LLMs: understand **meaning** and relationships
+
+</v-click>
+
+<v-click>
+
+<div class="mt-4 text-sm">
+
+| Keyword Search | Semantic Understanding |
+|----------------|----------------------|
+| "car" ≠ "automobile" | "car" ≈ "automobile" |
+| Matches exact words | Understands concepts |
+| "bank" = "bank" | "river bank" ≠ "savings bank" |
+
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="mt-4 bg-green-500 bg-opacity-20 rounded-lg p-3 text-sm">
+  <strong>Key Insight:</strong> LLMs convert tokens into vectors (embeddings) that capture meaning—similar concepts are "close" in this space.
+</div>
+
+</v-click>
+
+</div>
+</div>
+
+---
+transition: slide-up
+---
+
 # ChatGPT & The Rise of LLMs
 
 When AI became accessible to everyone
