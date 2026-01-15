@@ -146,6 +146,76 @@ From tokens to embeddings—what the Transformer actually processes
 transition: slide-up
 ---
 
+# How LLMs Generate Responses
+
+From understanding to creation—next-token prediction
+
+<div class="grid grid-cols-2 gap-8">
+<div>
+
+### The Generation Process
+
+- LLMs generate text **one token at a time**
+- For each position, model predicts the most likely **next token**
+- Uses everything before (context) to make each prediction
+
+<v-click>
+
+### Temperature: The Creativity Dial 🎛️
+
+<div class="flex justify-between items-center mt-4 text-sm">
+  <div class="bg-blue-500 bg-opacity-30 rounded-lg p-3 w-2/5 text-center">
+    <div class="font-bold">🧊 Low Temperature</div>
+    <div class="mt-1">"The sky is <strong>blue</strong>"</div>
+    <div class="opacity-70 text-xs mt-1">Predictable, factual</div>
+  </div>
+  <div class="text-2xl">← 🎚️ →</div>
+  <div class="bg-orange-500 bg-opacity-30 rounded-lg p-3 w-2/5 text-center">
+    <div class="font-bold">🔥 High Temperature</div>
+    <div class="mt-1">"The sky is <strong>melting</strong>"</div>
+    <div class="opacity-70 text-xs mt-1">Creative, surprising</div>
+  </div>
+</div>
+
+</v-click>
+
+</div>
+<div>
+
+<v-click>
+
+<div class="bg-blue-500 bg-opacity-20 rounded-lg p-4 mb-4">
+  <strong>Example: Completing a Sentence</strong>
+  <div class="text-sm mt-2">
+    Input: "Write me a quick email thanking someone for lunch" → <br/>
+    <span class="opacity-70">Step 1:</span> "Thank" <br/>
+    <span class="opacity-70">Step 2:</span> "Thank you" <br/>
+    <span class="opacity-70">Step 3:</span> "Thank you so" <br/>
+    <span class="opacity-70">...</span><br/>
+    <span class="opacity-70">Final:</span> "Thank you so much for lunch today! I really enjoyed our conversation." ✓
+  </div>
+</div>
+
+</v-click>
+
+<v-click>
+
+<div class="bg-orange-500 bg-opacity-20 rounded-lg p-4">
+  <strong>⚠️ Key Limitation</strong>
+  <div class="text-sm mt-2">
+    LLMs don't "know" things—they predict statistically likely continuations. This is why they can "hallucinate" plausible-sounding but incorrect information.
+  </div>
+</div>
+
+</v-click>
+
+</div>
+</div>
+
+---
+transition: slide-up
+---
+
 # ChatGPT & The Rise of LLMs
 
 When AI became accessible to everyone
