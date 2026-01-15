@@ -1,0 +1,156 @@
+/* Custom styles for Agentic AI Presentation */
+
+/* Subtle entrance animations for slide content */
+.slidev-layout {
+  --animate-delay: 0.1s;
+}
+
+/* Smooth v-click reveal animation */
+.slidev-vclick-target {
+  transition: all 0.4s ease-out;
+}
+
+.slidev-vclick-hidden {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+/* Card hover effect for info boxes */
+.slidev-layout .bg-blue-500,
+.slidev-layout .bg-green-500,
+.slidev-layout .bg-purple-500,
+.slidev-layout .bg-orange-500 {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.slidev-layout .bg-blue-500:hover,
+.slidev-layout .bg-green-500:hover,
+.slidev-layout .bg-purple-500:hover,
+.slidev-layout .bg-orange-500:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Improve contrast - replace low opacity with proper text colors */
+.slidev-layout .opacity-70 {
+  opacity: 0.85;
+}
+
+.slidev-layout .opacity-60 {
+  opacity: 0.8;
+}
+
+/* Table styling improvements */
+.slidev-layout table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.slidev-layout th {
+  background: rgba(100, 100, 255, 0.15);
+  font-weight: 600;
+}
+
+.slidev-layout td, 
+.slidev-layout th {
+  padding: 0.6em 1em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.slidev-layout tr:last-child td {
+  border-bottom: none;
+}
+
+/* Subtle image animations */
+.slidev-layout img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slidev-layout img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Mermaid diagram subtle glow */
+.mermaid svg {
+  filter: drop-shadow(0 2px 8px rgba(100, 150, 255, 0.1));
+}
+
+/* Enhanced code block styling */
+.slidev-layout pre {
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Gradient text for headings */
+.slidev-layout h1 {
+  background: linear-gradient(135deg, #fff 0%, rgba(200, 220, 255, 0.9) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeSlideIn 0.6s ease-out;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Subtle pulse for emoji icons */
+@keyframes subtlePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.slidev-layout .text-2xl {
+  animation: subtlePulse 3s ease-in-out infinite;
+}
+
+/* List item stagger animation */
+.slidev-layout ul > li,
+.slidev-layout ol > li {
+  animation: listFadeIn 0.4s ease-out backwards;
+}
+
+.slidev-layout ul > li:nth-child(1),
+.slidev-layout ol > li:nth-child(1) { animation-delay: 0.1s; }
+.slidev-layout ul > li:nth-child(2),
+.slidev-layout ol > li:nth-child(2) { animation-delay: 0.2s; }
+.slidev-layout ul > li:nth-child(3),
+.slidev-layout ol > li:nth-child(3) { animation-delay: 0.3s; }
+.slidev-layout ul > li:nth-child(4),
+.slidev-layout ol > li:nth-child(4) { animation-delay: 0.4s; }
+.slidev-layout ul > li:nth-child(5),
+.slidev-layout ol > li:nth-child(5) { animation-delay: 0.5s; }
+.slidev-layout ul > li:nth-child(6),
+.slidev-layout ol > li:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes listFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Key insight box enhanced styling */
+.slidev-layout .bg-green-500.bg-opacity-20 {
+  border-left: 3px solid rgba(34, 197, 94, 0.7);
+}
+
+/* Timeline enhanced visibility */
+.mermaid .timeline-section rect {
+  rx: 8;
+  ry: 8;
+}

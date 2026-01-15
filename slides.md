@@ -10,7 +10,12 @@ drawings:
   persist: false
 transition: slide-left
 mdc: true
+css: unocss
 ---
+
+<style>
+@import './style.css';
+</style>
 
 # What is Agentic AI?
 
@@ -258,7 +263,7 @@ flowchart TD
     E -- "No" --> B
 ```
 
-<div class="text-sm opacity-60 ml-4 w-32">
+<div class="text-sm opacity-80 ml-4 w-32 italic">
   The Agent Loop: Plan → Act → Observe → Repeat
 </div>
 
@@ -273,30 +278,30 @@ class: text-center
 # Key Takeaways
 
 <div class="grid grid-cols-4 gap-4 mt-8 text-sm">
-  <div class="bg-blue-500 bg-opacity-20 rounded-lg p-4">
+  <div class="bg-blue-500 bg-opacity-20 rounded-lg p-4 transition-all duration-300 hover:bg-opacity-30 hover:scale-105">
     <div class="text-2xl mb-2">🧠</div>
     <div class="font-bold">Transformers</div>
-    <div class="opacity-70">The architecture that understands context</div>
+    <div class="opacity-80">The architecture that understands context</div>
   </div>
-  <div class="bg-green-500 bg-opacity-20 rounded-lg p-4">
+  <div class="bg-green-500 bg-opacity-20 rounded-lg p-4 transition-all duration-300 hover:bg-opacity-30 hover:scale-105">
     <div class="text-2xl mb-2">💬</div>
     <div class="font-bold">LLMs</div>
-    <div class="opacity-70">AI that generates human-like text</div>
+    <div class="opacity-80">AI that generates human-like text</div>
   </div>
-  <div class="bg-purple-500 bg-opacity-20 rounded-lg p-4">
+  <div class="bg-purple-500 bg-opacity-20 rounded-lg p-4 transition-all duration-300 hover:bg-opacity-30 hover:scale-105">
     <div class="text-2xl mb-2">🔍</div>
     <div class="font-bold">RAG</div>
-    <div class="opacity-70">AI + Search for current info</div>
+    <div class="opacity-80">AI + Search for current info</div>
   </div>
-  <div class="bg-orange-500 bg-opacity-20 rounded-lg p-4">
+  <div class="bg-orange-500 bg-opacity-20 rounded-lg p-4 transition-all duration-300 hover:bg-opacity-30 hover:scale-105">
     <div class="text-2xl mb-2">🤖</div>
     <div class="font-bold">Agentic AI</div>
-    <div class="opacity-70">AI that plans and takes action</div>
+    <div class="opacity-80">AI that plans and takes action</div>
   </div>
 </div>
 
-<div class="mt-12 opacity-80">
-  Attention reads, LLMs write, RAG researches, but Agents do.
+<div class="mt-12 opacity-90 text-lg font-light tracking-wide">
+  Attention reads, LLMs write, RAG researches, but Agents <span class="font-semibold text-orange-300">do</span>.
 </div>
 
 <PoweredBySlidev mt-10 />
