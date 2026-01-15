@@ -1,6 +1,6 @@
 ---
 theme: seriph
-background: https://cover.sli.dev
+background: /images/dark-background.png
 title: What is Agentic AI?
 info: |
   ## What is Agentic AI?
