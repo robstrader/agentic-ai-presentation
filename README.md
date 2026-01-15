@@ -6,9 +6,11 @@ A Slidev presentation explaining the evolution of modern AI, designed for UX/Vis
 
 1. **Timeline** - The journey from Transformers to Agentic AI (2017-2024)
 2. **Transformer Architecture** - The foundation that made modern AI possible
-3. **ChatGPT & LLMs** - When AI became accessible to everyone
-4. **RAG** - Giving AI access to external knowledge
-5. **Agentic AI** - From responding to acting
+3. **How LLMs Understand Language** - From tokens to embeddings
+4. **How LLMs Generate Responses** - Next-token prediction and creativity
+5. **ChatGPT & LLMs** - When AI became accessible to everyone
+6. **RAG** - Giving AI access to external knowledge
+7. **Agentic AI** - From responding to acting
 
 ## Getting Started
 
